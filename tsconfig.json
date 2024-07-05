@@ -1,0 +1,25 @@
+{
+  "include": ["types/env.d.ts", "**/*.ts", "**/*.tsx"],
+  "compilerOptions": {
+    "types": ["@remix-run/cloudflare", "vite/client"],
+    "lib": ["DOM", "DOM.Iterable", "ES2022"],
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "jsx": "react-jsx",
+    "module": "nodenext",
+    "moduleResolution": "nodenext",
+    "resolveJsonModule": true,
+    "target": "ES2022",
+    "strict": true,
+    "noImplicitAny": true,
+    "allowJs": true,
+    "forceConsistentCasingInFileNames": true,
+    "paths": {
+      "#app/*": ["./app/*"],
+      "#tests/*": ["./tests/*"]
+    },
+    "skipLibCheck": true,
+    "allowImportingTsExtensions": true,
+    "noEmit": true
+  }
+}
