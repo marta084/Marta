@@ -10,10 +10,10 @@ import {
 } from "@remix-run/react";
 import { useEffect } from "react";
 import { Workbox } from "workbox-window";
-import styles from "./tailwind.css";
+import tailwindStyleSheet from '~/assets/css/tailwind.css?url'
 
 export const links: LinksFunction = () => [
-  { rel: "stylesheet", href: styles },
+  { rel: 'stylesheet', href: tailwindStyleSheet },
 ];
 
 export default function App() {

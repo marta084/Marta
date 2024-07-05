@@ -3,7 +3,7 @@ import { useLoaderData } from "@remix-run/react";
 import { type MetaFunction, json } from "@remix-run/cloudflare";
 import { format, getDay, addHours, parseISO, isAfter } from "date-fns";
 import { useEffect, useState, useRef } from "react";
-import { Meta } from '@remix-run/react';
+
 
 export const meta: MetaFunction = () => {
   return [
