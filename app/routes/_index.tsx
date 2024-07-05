@@ -1,8 +1,23 @@
 // app/routes/_index.tsx
 import { useLoaderData } from "@remix-run/react";
-import { json } from "@remix-run/node";
+import { type MetaFunction, json } from "@remix-run/cloudflare";
 import { format, getDay, addHours, parseISO, isAfter } from "date-fns";
 import { useEffect, useState, useRef } from "react";
+import { Meta } from '@remix-run/react';
+
+export const meta: MetaFunction = () => {
+  return [
+    { title: "Marta" },
+    {
+      property: "og:title",
+      content: "let do this,",
+    },
+    {
+      name: "description",
+      content: "do this app,",
+    },
+  ];
+};
 
 interface Task {
   task: string;
